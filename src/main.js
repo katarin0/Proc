@@ -7,6 +7,7 @@ import {
   containerIn,
   containerOut,
   containerSort,
+  containerOutAll,
 } from './Container.js';
 import { Reader, readerConst } from './Reader.js';
 import { Writer, writerConst, writeLine, save } from './Writer.js';
@@ -24,6 +25,7 @@ function main() {
   containerOut(container, writer);
   containerSort(container);
   containerOut(container, writer);
+  containerOutAll(container, writer, 'Shift');
   containerClear(container);
   containerOut(container, writer);
 
