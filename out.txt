@@ -1,10 +1,23 @@
 Start!
-Container contains: 6, elements!
-Text: Абв Replacement: [А->Я]-[б->ю]-[в->э], DecodedText: Яюэ
-Text: abc Shift: 3, DecodedText: def
-Text: Blue Shift: 3, DecodedText: Eoxh
-Text: Abc Replacement: [A->x]-[b->y]-[c->z], DecodedText: xyz
-Text: Кот Replacement: [К->Т]-[о->о]-[т->р], DecodedText: Тор
-Text: Кот Shift: 2, DecodedText: Мрф
+Container contains: 7, elements!
+Text: Абв, Length: 3, Replacement: [А->Я]-[б->ю]-[в->э], DecodedText: Яюэ, Owner: Kostya
+Text: abcd, Length: 4, Shift: 3, DecodedText: defg, Owner: Kostya
+Text: Blue, Length: 4, Shift: 3, DecodedText: Eoxh, Owner: Kostya
+Text: Abc, Length: 3, Replacement: [A->x]-[b->y]-[c->z], DecodedText: xyz, Owner: Mike
+Text: Кот, Length: 3, Replacement: [К->Т]-[о->о]-[т->р], DecodedText: Тор, Owner: Mike
+Text: Кот, Length: 3, Shift: 2, DecodedText: Мрф, Owner: Mike
+Text: Abc, Length: 3,ReplaceNumber: [A->3]-[b->2]-[c->1], DecodedText: 321, Owner: Denis
+Container contains: 7, elements!
+Text: Blue, Length: 4, Shift: 3, DecodedText: Eoxh, Owner: Kostya
+Text: abcd, Length: 4, Shift: 3, DecodedText: defg, Owner: Kostya
+Text: Abc, Length: 3,ReplaceNumber: [A->3]-[b->2]-[c->1], DecodedText: 321, Owner: Denis
+Text: Кот, Length: 3, Shift: 2, DecodedText: Мрф, Owner: Mike
+Text: Кот, Length: 3, Replacement: [К->Т]-[о->о]-[т->р], DecodedText: Тор, Owner: Mike
+Text: Abc, Length: 3, Replacement: [A->x]-[b->y]-[c->z], DecodedText: xyz, Owner: Mike
+Text: Абв, Length: 3, Replacement: [А->Я]-[б->ю]-[в->э], DecodedText: Яюэ, Owner: Kostya
+Container contains: 3, Shift elements!
+Text: Blue, Length: 4, Shift: 3, DecodedText: Eoxh, Owner: Kostya
+Text: abcd, Length: 4, Shift: 3, DecodedText: defg, Owner: Kostya
+Text: Кот, Length: 3, Shift: 2, DecodedText: Мрф, Owner: Mike
 Container contains: 0, elements!
 Stop!

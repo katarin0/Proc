@@ -1,7 +1,14 @@
 // let Container = require('./Container');
 // let Reader = require('./Reader');
 // let Writer = require('./Writer');
-import { containerConst, containerClear, containerIn, containerOut } from './Container.js';
+import {
+  containerConst,
+  containerClear,
+  containerIn,
+  containerOut,
+  containerSort,
+  containerOutAll,
+} from './Container.js';
 import { Reader, readerConst } from './Reader.js';
 import { Writer, writerConst, writeLine, save } from './Writer.js';
 function main() {
@@ -16,8 +23,10 @@ function main() {
   readerConst('in.txt', reader);
   containerIn(container, reader);
   containerOut(container, writer);
+  containerSort(container);
+  containerOut(container, writer);
+  containerOutAll(container, writer, 'Shift');
   containerClear(container);
-  console.log(container);
   containerOut(container, writer);
 
   writeLine(writer, 'Stop!');
