@@ -31,6 +31,7 @@ export const inText = (tmp, container) => {
         tmp.toString().split(' '),
         replaceNumber,
         tmp.split(' ')[1].replace(/\r/g, ''),
+        tmp.split(' ')[3].replace(/\r/g, ''),
       );
 
       container.push(replaceNumber);

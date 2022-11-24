@@ -14,10 +14,11 @@ export const replacementIn = (tmp, replacement, text, name) => {
   replacement.decodedText = txt1.join('');
   replacement.name = name;
 };
-export const replaceNumberIn = (tmp, replaceNumber, text) => {
+export const replaceNumberIn = (tmp, replaceNumber, text, name) => {
   replaceNumber.text = text;
   const { replaceTmp, replaceText } = replaceNumberFunc(tmp);
 
   replaceNumber.replaceNumber = replaceTmp.join('-');
   replaceNumber.decodedText = replaceText;
+  replaceNumber.name = name;
 };
