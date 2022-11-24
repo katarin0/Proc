@@ -6,5 +6,9 @@ Text: Blue Shift: 3, DecodedText: Eoxh
 Text: Abc Replacement: [A->x]-[b->y]-[c->z], DecodedText: xyz
 Text: Кот Replacement: [К->Т]-[о->о]-[т->р], DecodedText: Тор
 Text: Кот Shift: 2, DecodedText: Мрф
+Container contains: 3, Shift elements!
+Text: abc Shift: 3, DecodedText: def
+Text: Blue Shift: 3, DecodedText: Eoxh
+Text: Кот Shift: 2, DecodedText: Мрф
 Container contains: 0, elements!
 Stop!
