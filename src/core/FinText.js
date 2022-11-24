@@ -41,7 +41,6 @@ export const inText = (tmp, container) => {
   }
 };
 export const outText = (container, i, writer) => {
-  console.log(container[i]);
   if ('replacement' in container[i]) {
     replacementOut(container, i, writer);
   } else if ('shift' in container[i]) {
