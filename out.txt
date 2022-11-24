@@ -7,17 +7,27 @@ Text: Abc, Length: 3, Replacement: [A->x]-[b->y]-[c->z], DecodedText: xyz, Owner
 Text: Кот, Length: 3, Replacement: [К->Т]-[о->о]-[т->р], DecodedText: Тор, Owner: Mike
 Text: Кот, Length: 3, Shift: 2, DecodedText: Мрф, Owner: Mike
 Text: Abc, Length: 3,ReplaceNumber: [A->3]-[b->2]-[c->1], DecodedText: 321, Owner: Denis
-Container contains: 7, elements!
-Text: Blue, Length: 4, Shift: 3, DecodedText: Eoxh, Owner: Kostya
-Text: Abc, Length: 3,ReplaceNumber: [A->3]-[b->2]-[c->1], DecodedText: 321, Owner: Denis
-Text: Кот, Length: 3, Shift: 2, DecodedText: Мрф, Owner: Mike
-Text: Кот, Length: 3, Replacement: [К->Т]-[о->о]-[т->р], DecodedText: Тор, Owner: Mike
-Text: Abc, Length: 3, Replacement: [A->x]-[b->y]-[c->z], DecodedText: xyz, Owner: Mike
-Text: abd, Length: 3, Shift: 3, DecodedText: deg, Owner: Kostya
-Text: Абf, Length: 3, Replacement: [А->Я]-[б->ю]-[f->э], DecodedText: Яюэ, Owner: Kostya
-Container contains: 3, Shift elements!
-Text: Blue, Length: 4, Shift: 3, DecodedText: Eoxh, Owner: Kostya
-Text: Кот, Length: 3, Shift: 2, DecodedText: Мрф, Owner: Mike
-Text: abd, Length: 3, Shift: 3, DecodedText: deg, Owner: Kostya
+Multimethod
+Element 0 and 1 are Replacement and Shift
+Element 0 and 2 are Replacement and Shift
+Element 0 and 3 are Replacement and Replacement
+Element 0 and 4 are Replacement and Replacement
+Element 0 and 5 are Replacement and Shift
+Element 0 and 6 are Replacement and replaceNumber
+Element 1 and 2 are Shift and Shift
+Element 1 and 3 are Shift and Replacement
+Element 1 and 4 are Shift and Replacement
+Element 1 and 5 are Shift and Shift
+Element 1 and 6 are Shift and replaceNumber
+Element 2 and 3 are Shift and Replacement
+Element 2 and 4 are Shift and Replacement
+Element 2 and 5 are Shift and Shift
+Element 2 and 6 are Shift and replaceNumber
+Element 3 and 4 are Replacement and Replacement
+Element 3 and 5 are Replacement and Shift
+Element 3 and 6 are Replacement and replaceNumber
+Element 4 and 5 are Replacement and Shift
+Element 4 and 6 are Replacement and replaceNumber
+Element 5 and 6 are Shift and replaceNumber
 Container contains: 0, elements!
 Stop!

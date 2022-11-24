@@ -8,6 +8,7 @@ import {
   containerOut,
   containerSort,
   containerOutAll,
+  multiMethod,
 } from './Container.js';
 import { Reader, readerConst } from './Reader.js';
 import { Writer, writerConst, writeLine, save } from './Writer.js';
@@ -23,9 +24,7 @@ function main() {
   readerConst('in.txt', reader);
   containerIn(container, reader);
   containerOut(container, writer);
-  containerSort(container);
-  containerOut(container, writer);
-  containerOutAll(container, writer, 'Shift');
+  multiMethod(container, writer);
   containerClear(container);
   containerOut(container, writer);
 
