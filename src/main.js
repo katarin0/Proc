@@ -17,7 +17,6 @@ function main() {
   containerIn(container, reader);
   containerOut(container, writer);
   containerClear(container);
-  console.log(container);
   containerOut(container, writer);
 
   writeLine(writer, 'Stop!');

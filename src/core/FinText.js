@@ -6,12 +6,22 @@ export const inText = (tmp, container) => {
   switch (tmp[0]) {
     case '1':
       let replacement = new Replacement();
-      replacementIn(tmp.toString().split(' '), replacement, tmp.split(' ')[1].replace(/\r/g, ''));
+      replacementIn(
+        tmp.toString().split(' '),
+        replacement,
+        tmp.split(' ')[1].replace(/\r/g, ''),
+        tmp.split(' ')[3].replace(/\r/g, ''),
+      );
       container.push(replacement);
       break;
     case '2':
       let shift = new Shift();
-      shiftIn(tmp.toString().split(' '), shift, tmp.split(' ')[1]);
+      shiftIn(
+        tmp.toString().split(' '),
+        shift,
+        tmp.split(' ')[1],
+        tmp.split(' ')[3].replace(/\r/g, ''),
+      );
       container.push(shift);
       break;
     default:
