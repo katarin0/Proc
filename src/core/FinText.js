@@ -7,22 +7,12 @@ export const inText = (tmp, container) => {
   switch (tmp[0]) {
     case '1':
       let replacement = new Replacement();
-      replacementIn(
-        tmp.toString().split(' '),
-        replacement,
-        tmp.split(' ')[1].replace(/\r/g, ''),
-        tmp.split(' ')[3].replace(/\r/g, ''),
-      );
+      replacementIn(tmp.toString().split(' '), replacement, tmp.split(' ')[1].replace(/\r/g, ''));
       container.push(replacement);
       break;
     case '2':
       let shift = new Shift();
-      shiftIn(
-        tmp.toString().split(' '),
-        shift,
-        tmp.split(' ')[1],
-        tmp.split(' ')[3].replace(/\r/g, ''),
-      );
+      shiftIn(tmp.toString().split(' '), shift, tmp.split(' ')[1]);
       container.push(shift);
       break;
     case '3':
@@ -31,7 +21,6 @@ export const inText = (tmp, container) => {
         tmp.toString().split(' '),
         replaceNumber,
         tmp.split(' ')[1].replace(/\r/g, ''),
-        tmp.split(' ')[3].replace(/\r/g, ''),
       );
 
       container.push(replaceNumber);
@@ -41,6 +30,7 @@ export const inText = (tmp, container) => {
   }
 };
 export const outText = (container, i, writer) => {
+  console.log(container[i]);
   if ('replacement' in container[i]) {
     replacementOut(container, i, writer);
   } else if ('shift' in container[i]) {

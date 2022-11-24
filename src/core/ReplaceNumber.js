@@ -1,6 +1,5 @@
-export default function ReplaceNumber(text, replaceNumber, decodedText, name) {
+export default function ReplaceNumber(text, replaceNumber, decodedText) {
   this.text = text;
   this.replaceNumber = replaceNumber;
   this.decodedText = decodedText;
-  this.name = name;
 }
